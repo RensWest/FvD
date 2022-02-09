@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Rens Westerveld
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -23,19 +23,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Opdracht 1 plan
 
 <details open>
-  <summary>uitwerken na schetsen idee (voor week 2)</summary>
+  <summary>Ik wil het logo van "De Nederlansche Bank" gaan animeren. Dit logo bestaant uit tekst met een soort cirkel door de tekst. Deze cirkel
+  wil ik gaan animeren zodat het op een opengaande bankkluis lijkt. Wanneer de bankkluis open is zal de "e" veranderen in een euroteken die omhoog springt.</summary>
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/storyboardopdracht1.jpg" width="375px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Zelf kunnen maken van vormen in CSS.
+  - Nieuwe "gecompliceerde" animatie technieken gaan gebruiken die ik nog niet ken.
+  - De volledige animatie van mijn storyboard maken.
+  - Juist timen van animaties.
  
 </details>
 
