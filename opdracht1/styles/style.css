@@ -4,9 +4,9 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond-v14-latin-regular.woff2') format('woff2'),
+			 url('../fonts/cormorant-garamond-v14-latin-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -36,8 +36,10 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-main:#111;
+	--color-main:#042DA1;
 	--color-background:#eee;
+	--logo-font: 'Cormorant Garamond';
+	--font-voor-e: arial;
 }
 
 
@@ -48,10 +50,88 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-main);
-  background-color:var(--color-background);
+	font-family: var(--logo-font), serif;
+	font-size: 3vw;
+	color:var(--color-main);
+	background-color:var(--color-background);
+	letter-spacing: .25em;
+	height:100vh;
+	display:grid;
+	place-items:center;
 }
 
 /* jouw code */
+h1 {
+	position:relative;
+	
+	width:40vw;
+	aspect-ratio:1/1;
+	
+	
+	background-image:radial-gradient(
+		closest-side,
+		transparent 85%,
+		var(--color-main) 85% 100%,
+		transparent 100%
+	);
+	
+	display:grid;
+	place-items:center;
+}
 
+h1::after {
+	content:"";
+	
+	position:absolute;
+	width:30%;
+	height:30%;
+
+	
+	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	
+	animation:stekelrechts 10s infinite linear;
+}
+
+h1::before {
+	content:"";
+	
+	position:absolute;
+	width:30%;
+	height:30%;
+
+	
+	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	
+	animation:stekellinks 10s infinite linear;
+}
+
+@keyframes stekelrechts {
+	0% {
+		transform:rotate(70deg) translatey(-190%);
+	}
+	100% {
+		transform:rotate(70deg) translatey(-190%);
+		/* transform:rotate(calc(70deg + 1turn)) translatey(-190%); */
+	}
+}
+
+@keyframes stekellinks {
+	0% {
+		transform:rotate(250deg) translatey(-190%); 
+	}
+	100% {
+		transform:rotate(250deg) translatey(-190%);
+		/* transform:rotate(calc(250deg + 1turn)) translatey(-190%); */
+	}
+}
+
+h1 > span {
+	position: absolute;
+	flex-wrap: nowrap;
+	background-color: rgb(139, 139, 139);
+	/* background-color: var(--color-background); */
+}
