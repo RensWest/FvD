@@ -56,6 +56,7 @@ body {
 	background-color:var(--color-background);
 	letter-spacing: .25em;
 	height:100vh;
+	width: 100vw;
 	display:grid;
 	place-items:center;
 }
@@ -77,6 +78,7 @@ h1 {
 	
 	display:grid;
 	place-items:center;
+
 }
 
 h1::after {
@@ -85,13 +87,14 @@ h1::after {
 	position:absolute;
 	width:30%;
 	height:30%;
+	transform:rotate(70deg) translatey(-190%);
 
 	
 	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
 	
 	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
 	
-	animation:stekelrechts 10s infinite linear;
+	animation:stekelrechts 5s ease-in-out;
 }
 
 h1::before {
@@ -100,22 +103,34 @@ h1::before {
 	position:absolute;
 	width:30%;
 	height:30%;
+	transform:rotate(250deg) translatey(-190%);
 
 	
 	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
 	
 	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
 	
-	animation:stekellinks 10s infinite linear;
+	animation:stekellinks 5s ease-in-out;
 }
 
 @keyframes stekelrechts {
 	0% {
 		transform:rotate(70deg) translatey(-190%);
 	}
+	25% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+
+	75% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
 	100% {
 		transform:rotate(70deg) translatey(-190%);
-		/* transform:rotate(calc(70deg + 1turn)) translatey(-190%); */
+		transform:rotate(calc(70deg + 1turn)) translatey(-190%);
 	}
 }
 
@@ -123,9 +138,20 @@ h1::before {
 	0% {
 		transform:rotate(250deg) translatey(-190%); 
 	}
+	25% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+
+	75% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
 	100% {
 		transform:rotate(250deg) translatey(-190%);
-		/* transform:rotate(calc(250deg + 1turn)) translatey(-190%); */
+		transform:rotate(calc(250deg + 1turn)) translatey(-190%);
 	}
 }
 
@@ -133,5 +159,42 @@ h1 > span {
 	position: absolute;
 	flex-wrap: nowrap;
 	background-color: rgb(139, 139, 139);
-	/* background-color: var(--color-background); */
+	background-color: var(--color-background);
+	width: 80vw;
+	z-index: 1;
+}
+
+body > h1:only-of-type {
+	animation: openklappen 3s;
+	animation-delay: 5s;
+}
+
+
+@keyframes openklappen {
+	0% {
+		transform: rotatey(0deg);
+	}
+
+	50% {
+		transform: rotatey(90deg);
+	}
+
+	100% {
+		transform: rotatey(90deg);
+	}
+}
+
+body > h1 > span {
+	animation: eurotekens 3s;
+	animation-delay: 5s;
+}
+
+@keyframes eurotekens {
+	0% {
+		transform: rotatey(0deg);
+	}
+
+	100% {
+		transform: rotatey(-90deg);
+	}
 }
