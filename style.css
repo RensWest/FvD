@@ -1,0 +1,280 @@
+/* CSS Document */
+
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond-v14-latin-regular.woff2') format('woff2'),
+			 url('../fonts/cormorant-garamond-v14-latin-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-main:#042DA1;
+	--color-background:#eee;
+	--logo-font: 'Cormorant Garamond';
+	--font-voor-e: arial;
+}
+
+/* @media (prefers-color-scheme:dark) {
+	:root {
+	--color-main: #eee;
+	--color-background: #042DA1;
+	}
+} */
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+	font-family: var(--logo-font), serif;
+	font-size: 3vw;
+	color:var(--color-main);
+	background-color:var(--color-background);
+	letter-spacing: .25em;
+	height:100vh;
+	width: 100vw;
+	display:grid;
+	place-items:center;
+}
+
+/* jouw code */
+h1{
+	position:relative;
+	
+	width:40vw;
+	aspect-ratio:1/1;
+	
+	display:grid;
+	place-items:center;
+
+}
+
+
+h1 div {
+	aspect-ratio:1/1;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+
+	background-image:radial-gradient(
+		closest-side,
+		var(--color-background) 85%,
+		var(--color-main) 85% 100%,
+		transparent 100%
+	);
+
+	display:grid;
+	place-items:center;
+
+	transform-origin: left center;
+	animation: openklappen 3s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+h1 div::after {
+	content:"";
+	z-index: 0;
+	
+	position:absolute;
+	width:30%;
+	height:30%;
+	transform:rotate(70deg) translatey(-190%);
+
+	
+	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	
+	animation:stekelrechts 5s ease-in-out;
+}
+
+h1 div::before {
+	content:"";
+	z-index: 0;
+	
+	position:absolute;
+	width:30%;
+	height:30%;
+	transform:rotate(250deg) translatey(-190%);
+
+	
+	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	
+	animation:stekellinks 5s ease-in-out;
+}
+
+@keyframes stekelrechts {
+	0% {
+		transform:rotate(70deg) translatey(-190%);
+	}
+	25% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+
+	75% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+	100% {
+		transform:rotate(70deg) translatey(-190%);
+		transform:rotate(calc(70deg + 1turn)) translatey(-190%);
+	}
+}
+
+@keyframes stekellinks {
+	0% {
+		transform:rotate(250deg) translatey(-190%); 
+	}
+	25% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+
+	75% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
+	
+	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	}
+	100% {
+		transform:rotate(250deg) translatey(-190%);
+		transform:rotate(calc(250deg + 1turn)) translatey(-190%);
+	}
+}
+
+h1 span {
+	position: absolute;
+	background-color: rgb(139, 139, 139);
+	background-color: var(--color-background);
+	width: 72vw;
+	z-index: 1;
+}
+
+@keyframes openklappen {
+	0% {
+		transform: perspective(10em) rotatey(0deg);
+	}
+
+	50% {
+		transform: perspective(10em) rotatey(90deg);
+	}
+
+	100% {
+		transform: perspective(10em) rotatey(90deg);
+	}
+}
+
+span span {
+	position: relative;
+
+	animation: wegvagen 1s 5s infinite;
+}
+
+span span::after {
+	content: "€";
+	position: absolute;
+	left: -.1em;
+	color: var(--color-main);
+	color: transparent;
+	animation: terugkomen 1s infinite;
+	animation-delay: 5s;
+}
+
+span span:first-of-type::after {
+	animation: letterjump 2s infinite ease-in-out;
+	animation-delay: 5s;
+}
+
+span span:nth-of-type(2)::after {
+	animation: letterjump 2s infinite ease-in-out;
+	animation-delay: 5.25s;
+}
+
+span span:nth-of-type(3)::after {
+	animation: letterjump 2s infinite ease-in-out;
+	animation-delay: 5.5s;
+}
+
+span span:nth-of-type(4)::after {
+	animation: letterjump 2s infinite ease-in-out;
+	animation-delay: 5.75s;
+}
+
+@keyframes terugkomen {
+	0% {
+		color: var(--color-main);
+	}
+
+	100% {
+		color: var(--color-main);
+	}
+}
+
+@keyframes letterjump {
+	0% {
+		transform: 0;
+		color: var(--color-main);
+	}
+
+	50% {
+		transform: translateY(-1em);
+		color: var(--color-main);
+	}
+
+	100% {
+		transform: 0;
+		color: var(--color-main);
+	}
+}
+
+@keyframes wegvagen {
+	0% {
+		color: transparent;
+	}
+
+	100% {
+		color: transparent;
+	}
+}
+
+/* @media (prefers-reduced-motion:no-preference) {
+	body {
+		animation: running;
+	}
+	
+} */
