@@ -40,14 +40,15 @@ button, summary {
 	--color-background:#eee;
 	--logo-font: 'Cormorant Garamond';
 	--font-voor-e: arial;
+	--fw-100: 100;
 }
 
-/* @media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme:dark) {
 	:root {
 	--color-main: #eee;
-	--color-background: #042DA1;
+	--color-background: #001244;
 	}
-} */
+}
 
 
 
@@ -87,8 +88,8 @@ h1 div {
 
 	background-image:radial-gradient(
 		closest-side,
-		var(--color-background) 85%,
-		var(--color-main) 85% 100%,
+		var(--color-background) 84.5%,
+		var(--color-main) 85% 99.5%,
 		transparent 100%
 	);
 
@@ -96,84 +97,62 @@ h1 div {
 	place-items:center;
 
 	transform-origin: left center;
-	animation: openklappen 3s;
-	animation-delay: 5s;
+	animation: openklappen 3s 5s;
 	animation-fill-mode: forwards;
 }
 
-h1 div::after {
+h1 div::after,
+h1 div::before {
 	content:"";
 	z-index: 0;
-	
-	position:absolute;
-	width:30%;
-	height:30%;
-	transform:rotate(70deg) translatey(-190%);
 
-	
+	position:absolute;
+	width:40%;
+	height:40%;
+
 	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
-	
+	-webkit-mask:
+		linear-gradient(to left, red 49.5%, transparent 49.5%),
+		radial-gradient(circle at 50% 49vw, transparent 17vw,red 17vw) center center / 58vw 58vw no-repeat;
+
 	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
-	
+}
+
+h1 div::after {
+	transform:rotate(70deg) translatey(-20vw);
 	animation:stekelrechts 5s ease-in-out;
 }
 
 h1 div::before {
-	content:"";
-	z-index: 0;
-	
-	position:absolute;
-	width:30%;
-	height:30%;
-	transform:rotate(250deg) translatey(-190%);
-
-	
-	background-image:linear-gradient(to right, var(--color-main) 50%, var(--color-background) 50%);
-	
-	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
-	
+	transform:rotate(250deg) translatey(-20vw);
 	animation:stekellinks 5s ease-in-out;
 }
 
 @keyframes stekelrechts {
 	0% {
-		transform:rotate(70deg) translatey(-190%);
+		transform:rotate(70deg) translatey(-20vw);
 	}
-	25% {
-		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
-	
-	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
-	}
-
-	75% {
-		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
-	
-	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	25%, 85% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);	
+		clip-path:polygon(50% 0%, 50% 0%, 50% 100%, 0% 100%, 50% 0%);
 	}
 	100% {
-		transform:rotate(70deg) translatey(-190%);
-		transform:rotate(calc(70deg + 1turn)) translatey(-190%);
+		transform:rotate(70deg) translatey(-20vw);
+		transform:rotate(calc(70deg + 1turn)) translatey(-20vw);
 	}
 }
 
 @keyframes stekellinks {
 	0% {
-		transform:rotate(250deg) translatey(-190%); 
+		transform:rotate(250deg) translatey(-20vw); 
 	}
-	25% {
-		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
-	
-	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
-	}
-
-	75% {
-		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);
-	
-	clip-path:polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+	25%, 85% {
+		background-image:linear-gradient(to right, var(--color-main) 50%, transparent 50%);	
+		clip-path:polygon(50% 0%, 50% 0%, 50% 100%, 0% 100%, 50% 0%);
 	}
 	100% {
-		transform:rotate(250deg) translatey(-190%);
-		transform:rotate(calc(250deg + 1turn)) translatey(-190%);
+		transform:rotate(250deg) translatey(-20vw);
+		transform:rotate(calc(250deg + 1turn)) translatey(-20vw);
 	}
 }
 
@@ -202,37 +181,34 @@ h1 span {
 span span {
 	position: relative;
 
-	animation: wegvagen 1s 5s infinite;
+	animation: wegvagen 1s 6.25s infinite;
 }
 
 span span::after {
 	content: "€";
+	font-family: var(--font-voor-e);
+	font-weight: var(--fw-100);
 	position: absolute;
-	left: -.1em;
+	left: -.05em;
 	color: var(--color-main);
 	color: transparent;
-	animation: terugkomen 1s infinite;
-	animation-delay: 5s;
+	animation: terugkomen 1s 6.25s infinite;
 }
 
 span span:first-of-type::after {
-	animation: letterjump 2s infinite ease-in-out;
-	animation-delay: 5s;
+	animation: letterjump 2s 6.25s infinite ease-in-out;
 }
 
 span span:nth-of-type(2)::after {
-	animation: letterjump 2s infinite ease-in-out;
-	animation-delay: 5.25s;
+	animation: letterjump 2s 6.5s infinite ease-in-out;
 }
 
 span span:nth-of-type(3)::after {
-	animation: letterjump 2s infinite ease-in-out;
-	animation-delay: 5.5s;
+	animation: letterjump 2s 6.75s infinite ease-in-out;
 }
 
 span span:nth-of-type(4)::after {
-	animation: letterjump 2s infinite ease-in-out;
-	animation-delay: 5.75s;
+	animation: letterjump 2s 7s infinite ease-in-out;
 }
 
 @keyframes terugkomen {
@@ -273,8 +249,11 @@ span span:nth-of-type(4)::after {
 }
 
 @media (prefers-reduced-motion:no-preference) {
-	body {
-		animation: running;
+
+	body *, body *::after, body *::before {
+	
+	animation-play-state: running !important;
+	
 	}
 	
 }
