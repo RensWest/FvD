@@ -69,7 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   pas af te spelen wanneer iemand geen voorkeur heeft. Andersom lukte het wel dus na hulp van Sanne/U is het mij toch gelukt. Het probleem zat hem in de selectie (werkte niet op de body, maar alleen op "*" en ik moest ::before en ::after er specifiek bij zetten) van de
   elementen en ik moest "!important" achter running zetten. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/opdracht1ss3.png" width="375px" alt="bummer">
 </details>
 
 
