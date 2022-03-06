@@ -28,7 +28,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/storyboard_opdracht1.jpg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/storyboardopdracht1.jpg" width="375px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
@@ -36,7 +36,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Zelf kunnen maken van vormen in CSS.
   - Nieuwe "gecompliceerde" animatie technieken gaan gebruiken die ik nog niet ken.
   - De volledige animatie van mijn storyboard maken.
-  - Juist timen van animaties.
+  - Perfect timen van animaties.
  
 </details>
 
@@ -49,17 +49,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/opdracht1ss1.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Ik heb geleerd om een HTML element helemaal te stijlen met CSS. Zo heb ik van de h1 een cirkel gemaakt. (paars)
+  Ik heb nu ook voor het eerst met clip-path gewerkt om zo een vorm te maken (driehoek). (rood)
+  Ik begrijp nu positioneren beter (bijvoorbeeld de driekhoeken draaien en positioneren). (rood)
+
+  <img src="readme-images/opdracht1ss2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
+  Ik vond het lastig om oplossingen voor specifieke dingen via internet te vinden.
+  De toegankelijkheids ophoging voor "Verminder beweging" ging erg stroef. Hij wilde bij mij steeds niet werken om alles te pauzeren als standaard te hebben en
+  pas af te spelen wanneer iemand geen voorkeur heeft. Andersom lukte het wel dus na hulp van Sanne/U is het mij toch gelukt. Het probleem zat hem in de selectie (werkte niet op de body, maar alleen op "*" en ik moest ::before en ::after er specifiek bij zetten) van de
+  elementen en ik moest "!important" achter running zetten. 
 
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>

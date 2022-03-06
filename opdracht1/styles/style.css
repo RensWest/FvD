@@ -97,7 +97,7 @@ h1 div {
 	place-items:center;
 
 	transform-origin: left center;
-	animation: openklappen 3s 5s;
+	animation: openklappen 3s 5s paused;
 	animation-fill-mode: forwards;
 }
 
@@ -120,12 +120,12 @@ h1 div::before {
 
 h1 div::after {
 	transform:rotate(70deg) translatey(-20vw);
-	animation:stekelrechts 5s ease-in-out;
+	animation:stekelrechts 5s ease-in-out paused;
 }
 
 h1 div::before {
 	transform:rotate(250deg) translatey(-20vw);
-	animation:stekellinks 5s ease-in-out;
+	animation:stekellinks 5s ease-in-out paused;
 }
 
 @keyframes stekelrechts {
@@ -181,7 +181,7 @@ h1 span {
 span span {
 	position: relative;
 
-	animation: wegvagen 1s 6.25s infinite;
+	animation: wegvagen 1s 6.25s infinite paused;
 }
 
 span span::after {
@@ -192,23 +192,23 @@ span span::after {
 	left: -.05em;
 	color: var(--color-main);
 	color: transparent;
-	animation: terugkomen 1s 6.25s infinite;
+	animation: terugkomen 1s 6.25s infinite paused;
 }
 
 span span:first-of-type::after {
-	animation: letterjump 2s 6.25s infinite ease-in-out;
+	animation: letterjump 2s 6.25s infinite ease-in-out paused;
 }
 
 span span:nth-of-type(2)::after {
-	animation: letterjump 2s 6.5s infinite ease-in-out;
+	animation: letterjump 2s 6.5s infinite ease-in-out paused;
 }
 
 span span:nth-of-type(3)::after {
-	animation: letterjump 2s 6.75s infinite ease-in-out;
+	animation: letterjump 2s 6.75s infinite ease-in-out paused;
 }
 
 span span:nth-of-type(4)::after {
-	animation: letterjump 2s 7s infinite ease-in-out;
+	animation: letterjump 2s 7s infinite ease-in-out paused;
 }
 
 @keyframes terugkomen {
@@ -223,17 +223,15 @@ span span:nth-of-type(4)::after {
 
 @keyframes letterjump {
 	0% {
-		transform: 0;
 		color: var(--color-main);
 	}
 
 	50% {
-		transform: translateY(-1em);
+		transform: translateY(-1em) rotateY(1turn);
 		color: var(--color-main);
 	}
 
 	100% {
-		transform: 0;
 		color: var(--color-main);
 	}
 }
@@ -250,7 +248,7 @@ span span:nth-of-type(4)::after {
 
 @media (prefers-reduced-motion:no-preference) {
 
-	body *, body *::after, body *::before {
+	*, *::after, *::before {
 	
 	animation-play-state: running !important;
 	
