@@ -14,9 +14,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/mask-clip
+  3. https://cssgradient.io/
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
+  5. https://www.w3schools.com/cssref/css3_pr_animation.asp
+  6. https://css-tricks.com/almanac/properties/a/animation/
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
 
 
 
