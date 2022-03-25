@@ -21,6 +21,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. https://www.w3schools.com/cssref/css3_pr_animation.asp
   6. https://css-tricks.com/almanac/properties/a/animation/
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+  8. https://iconmonstr.com/trash-can-10-svg/
+  9. https://iconmonstr.com/favorite-10-svg/
+  10. https://www.youtube.com/watch?v=jfYWwQrtzzY
+  
 
 
 
@@ -85,15 +89,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/opdracht2ss1.png" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Javascript leren
+    - Muziek laten afspelen
+    - Item toe laten voegen aan een lijst
+  - Meer werken met grid
 </details>
 
 
@@ -108,23 +112,47 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Elke keer als ik 2 items toevoegde aan mij lijst versprong die ineens van plek. (tekst en afbeeding(en)
+  <img src="readme-images/bevinding1.png" width="375px" alt="top">
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb de code helemaal opnieuw geschreven omdat er meerde fouten inzaten en toe werkte het wel.
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Als ik filterde dan veranderde de vormgeving van de muziekkaartjes (tekst en afbeeding(en)).
+  <img src="readme-images/bevinding2.png" width="375px" alt="top">
+
+  #### oplossing:
+  De vormgeving zat nog niet goed toegepast op alle kaartje. Omdat door het filteren de kaartjes een andere class kregen ging deze vormgeving niet mee.
+
+
+
+  ### Bevinding 3:
+  Wanneer ik een muziek kaart sleep vanaf de tekst, dan wordt de tekst toegevoegd aan de afspeellijst en niet het hele kaartje.
+  <img src="readme-images/bevinding3.png" width="375px" alt="top">
+
+  #### oplossing:
+  NOG NIET OPGELOST
+
+
+
+  ### Bevinding 4:
+  NOG BEDENKEN.
+  <img src="readme-images/bevinding4.png" width="375px" alt="top">
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
 
 
-  ### Bevinding 3:
-  ...
+  ### Bevinding 5:
+  Wanneer ik een kaartje naar een van de kanten wilde slepen werd hij niet toegevoegd aan de afspeelijst, maar werd het beeld breder.
+  <img src="readme-images/bevinding5.png" width="375px" alt="top">
+
+  #### oplossing:
+  Ik heb de code helemaal opnieuw geschreven omdat er meerde fouten inzaten en toe werkte het wel. Ik heb de pagina anders ingedeeld en de HTML wat simpeler gemaakt.
 </details>
 
 
@@ -141,11 +169,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Ik heb echt veel Javascript geleerd. Ik weet nu hoe ik items van de ene UL naa de ander kan overzetten, Ik heb weer geoefend met een dropdown menu, Ik weet nu hoe ik
+  items moet filteren. Ik heb nu ook beter leren werken met grids, want voorheen snapte ik alleen flexbox.
+  <img src="readme-images/geleerd1.png" width="375px" alt="top">
+  <img src="readme-images/geleerd2.png" width="375px" alt="top">
+  <img src="readme-images/geleerd3.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
+  Het beginnen met javascript zonder voorbeelden of hulp ging erg lastig, maar door het voorbeeld van de tinderkaartjes heb ik erg veel geleerd en heb ik dit ook toe kunnen
+  passen op mijn eigen ontwerp. Toen ik eenmaal een goede basis had liep het wel beter en kon ik specifieker kijken naar fouten die ik onderweg maakte.
+
+  Het is mij door de tijd niet gelukt om ... te maken.
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>
