@@ -122,11 +122,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevinding 2:
   Als ik filterde dan veranderde de vormgeving van de muziekkaartjes (tekst en afbeeding(en)).
-  <img src="readme-images/bevinding2.png" width="375px" alt="top">
+  <img src="readme-images/bevinding2-1.png" width="375px" alt="top">
 
   #### oplossing:
   De vormgeving zat nog niet goed toegepast op alle kaartje. Omdat door het filteren de kaartjes een andere class kregen ging deze vormgeving niet mee.
-
+  <img src="readme-images/bevinding2-2.png" width="375px" alt="top">
 
 
   ### Bevinding 3:
