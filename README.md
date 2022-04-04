@@ -21,9 +21,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. https://www.w3schools.com/cssref/css3_pr_animation.asp
   6. https://css-tricks.com/almanac/properties/a/animation/
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
-  8. https://iconmonstr.com/trash-can-10-svg/
-  9. https://iconmonstr.com/favorite-10-svg/
-  10. https://www.youtube.com/watch?v=jfYWwQrtzzY
+  8. https://iconmonstr.com/
+  9. https://www.youtube.com/watch?v=jfYWwQrtzzY
   
 
 
@@ -112,11 +111,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 1:
-  Elke keer als ik 2 items toevoegde aan mij lijst versprong die ineens van plek. (tekst en afbeeding(en)
+  Elke keer als ik 2 items toevoegde aan mij lijst versprong die ineens van plek. (tekst en afbeelding(en)
   <img src="readme-images/bevinding1.png" width="375px" alt="top">
 
   #### oplossing:
-  Ik heb de code helemaal opnieuw geschreven omdat er meerde fouten inzaten en toe werkte het wel.
+  Ik heb de code helemaal opnieuw geschreven omdat er meerde fouten inzaten en toen werkte het beter, maar de grootste fout zat hem in het inspecteren van chrome waar ik geen invloed op heb.
 
 
 
@@ -125,8 +124,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding2-1.png" width="375px" alt="top">
 
   #### oplossing:
-  De vormgeving zat nog niet goed toegepast op alle kaartje. Omdat door het filteren de kaartjes een andere class kregen ging deze vormgeving niet mee.
+  De vormgeving zat nog niet goed toegepast op alle kaartjes. Omdat door het filteren de kaartjes een andere class kregen ging deze vormgeving niet mee.
   <img src="readme-images/bevinding2-2.png" width="375px" alt="top">
+
 
 
   ### Bevinding 3:
@@ -134,20 +134,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding3.png" width="375px" alt="top">
 
   #### oplossing:
-  NOG NIET OPGELOST
+  Door te luisteren naar de dichtsbijzijnde LI en alleen die toe te voegen aan de .list werd het hele kaartje toegevoegd ipv. elementen ervan.
 
 
 
   ### Bevinding 4:
-  NOG BEDENKEN.
-  <img src="readme-images/bevinding4.png" width="375px" alt="top">
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 5:
   Wanneer ik een kaartje naar een van de kanten wilde slepen werd hij niet toegevoegd aan de afspeelijst, maar werd het beeld breder.
   <img src="readme-images/bevinding5.png" width="375px" alt="top">
 
@@ -180,8 +171,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatje(s)
 
   Het beginnen met javascript zonder voorbeelden of hulp ging erg lastig, maar door het voorbeeld van de tinderkaartjes heb ik erg veel geleerd en heb ik dit ook toe kunnen
-  passen op mijn eigen ontwerp. Toen ik eenmaal een goede basis had liep het wel beter en kon ik specifieker kijken naar fouten die ik onderweg maakte.
+  passen op mijn eigen ontwerp. Toen ik eenmaal een goede basis had liep het wel beter en kon ik specifieker kijken naar fouten die ik onderweg maakte me javascript in plaatst van het zoeken naar hoe iets nou moest.
 
-  Het is mij door de tijd niet gelukt om ... te maken.
+  Ik vond het lastig om een muziekspeler te maken die items vanuit te afspeellijst af te spelen.
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>
