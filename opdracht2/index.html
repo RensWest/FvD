@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+	<!-- GENRE FILTER -->
+	<section class="genrefilter">
+		<h2>Genre filter</h2>
+		<aside aria-label="filteren en sorteren">
+			<!-- bij het openen van de pagina geen filter -> all -->
+			<input type="radio" name="filter" value="alles" id="filter-alles" checked>
+			<label for="filter-all">Alles</label>
+			<!-- de values van de radio buttons worden zo gebruikt om te filteren -->
+			<input type="radio" name="filter" value="pop" id="filter-pop">
+			<label for="filter-people">Pop</label>
+			<input type="radio" name="filter" value="house" id="filter-house">
+			<label for="filter-animals">House</label>
+			<input type="radio" name="filter" value="techno" id="filter-techno">
+			<label for="filter-items">Techno</label>
+		  </aside>
+	</section>
+
+	<!-- het stapeltje -->
+	<section class="muziek">
+		<h1>Playlist Tinder</h1>
+		<p>← Swipe om te starten →</p>
+		<ul>
+			<!-- een card item met de genre als class -->
+			<li class="pop">
+				<img src="./images/albumcover4.jpeg" alt="Hier foto muzieknummer">
+				<h2>Hallo</h2>
+				<h3>Antoon</h3>
+				<audio src="./images/audio/hallo.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="house">
+				<img src="./images/albumcover5.jpeg" alt="Hier foto muzieknummer">
+				<h2>In The Name Of Love</h2>
+				<h3>Martin Garrix, Bebe Rexha</h3>
+				<source src="./images/audio/inthenameoflove.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="techno">
+				<img src="./images/albumcover6.jpeg" alt="Hier foto muzieknummer">
+				<h2>The Arrival</h2>
+				<h3>Deniz Bul</h3>
+				<audio src="./images/audio/thearrival.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="techno">
+				<img src="./images/albumcover7.jpeg" alt="Hier foto muzieknummer">
+				<h2>Move Your Body To The Beat</h2>
+				<h3>Reinier Zonneveld</h3>
+				<audio src="./images/audio/moveyourbodytothebeat.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="house">
+				<img src="./images/albumcover8.png" alt="Hier foto muzieknummer">
+				<h2>Summer Days</h2>
+				<h3>Martin Garrix, Macklemore, Fall Out Boy</h3>
+				<source src="./images/audio/summerdays.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="pop">
+				<img src="./images/albumcover9.jpeg" alt="Hier foto muzieknummer">
+				<h2>Lady - Hear Me Tonight</h2>
+				<h3>Modjo</h3>
+				<audio src="./images/audio/hearmetonight.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="house">
+				<img src="./images/albumcover13.jpeg" alt="Hier foto muzieknummer">
+				<h2>Love tonight - edit</h2>
+				<h3>Shouse</h3>
+				<audio src="./images/audio/lovetonight.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>	
+			</li>
+
+			<li class="techno">
+				<img src="./images/albumcover10.jpeg" alt="Hier foto muzieknummer">
+				<h2>Seat Belt</h2>
+				<h3>ROBPM</h3>
+				<audio src="./images/audio/seatbelt.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="pop">
+				<img src="./images/albumcover11.jpeg" alt="Hier foto muzieknummer">
+				<h2>Piece Of Your Heart</h2>
+				<h3>MEDUZA, Goodboys</h3>
+				<audio src="./images/audio/pieceofyourheart.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="pop">
+				<img src="./images/albumcover12.jpeg" alt="Hier foto muzieknummer">
+				<h2>Save Your Tears</h2>
+				<h3>The Weeknd, Ariana Grande</h3>
+				<audio src="./images/audio/saveyourtears.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="techno">
+				<img src="./images/albumcover2.jpeg" alt="Hier foto muzieknummer">
+				<h2>Sexiest Man In Jamaica</h2>
+				<h3>Endor</h3>
+				<audio src="./images/audio/sexiestmaninjamaica.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="house">
+				<img src="./images/albumcover3.jpeg" alt="Hier foto muzieknummer">
+				<h2>United We Are</h2>
+				<h3>Hardwell</h3>
+				<audio src="./images/audio/unitedweare.mp3"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li>
+				<img src="./images/favicon.svg" alt="Hier foto muzieknummer">
+				<h2 class="handle">Kort geluid</h2>
+				<h3>Om te laten zien dat het werkt</h3>
+				<audio src="./images/audio/kortgeluid.wav" class="previewLiedje"></audio>
+				<button> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+
+			<li class="pop">
+				<img src="./images/albumcover1.jpeg" alt="Hier foto muzieknummer">
+				<h2 class="handle">Starboy</h2>
+				<h3>The Weeknd, Daft Punk</h3>
+				<audio src="./images/audio/starboy.mp3" class="previewLiedje"></audio>
+				<button class="previewkk"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg> </button>
+			</li>
+		</ul>
+	</section>
+
+	<!-- de favo's -->
+	<section class="afspeellijst">
+		<button class="afspeellijstomhoog"> <img src="./images/up-arrow-svgrepo-com.svg" alt="arrow up"> </button>
+		<h1>Afspeellijst (<span>0</span>) </h1>
+		
+		<!-- muziekspeler -->
+		<section class="muziekspeler">
+			<h2>Naam Nummer</h2>
+			<h3>Naam artiest</h3>
+			<section>
+				<button></button>
+			</section>
+		</section>
+
+		<!-- leeg lijstje om te vullen -->
+		<ul id="list"></ul>
+	</section>
+	
+	
+	<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</body>
+	
+</html>
