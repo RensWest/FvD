@@ -267,7 +267,6 @@ function startPlayListSong (song) {
 	// textcontent aanpassen in de muziekspeler
 	hierNaamArtiest.textContent = songTitle.textContent;
 	hierNaamNummer.textContent = songArtist.textContent;
-	hierFotoNummer.textContent = songFoto.textContent;
 	// audio afspelen
 	songAudio.play();
 
