@@ -154,7 +154,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/eindopdracht2.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -174,5 +174,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   passen op mijn eigen ontwerp. Toen ik eenmaal een goede basis had liep het wel beter en kon ik specifieker kijken naar fouten die ik onderweg maakte me javascript in plaatst van het zoeken naar hoe iets nou moest.
 
   Ik vond het lastig om een muziekspeler te maken die items vanuit te afspeellijst af te spelen.
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/opdracht2lastig.png" width="375px" alt="bummer">
 </details>
